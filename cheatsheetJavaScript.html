@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+<head>
+  <title>CheatSHeet JS</title>
+  <link rel="stylesheet" href="#">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+  body{
+    margin: 0 auto;
+    width: 900px;
+    background-color: pink;
+  }
+  .container {
+    margin: 10px 100px;
+    text-align: center;
+    font-family: 'Quicksand', times;
+
+  }
+  b{
+    border-bottom: 2px solid #999;
+    font-size: 30px;
+  }
+  h1{
+    font-size: 50px;
+  }
+
+
+
+  </style>
+<body>
+  <div class="container">
+      <h1>CheatSheet for JS</h1>
+
+       <p><b>Variables</b></p>
+       <p> JavaScript variables are containers for storing data values.<br>
+        ex:    var x = 5;<br>
+               var y = 6;<br>
+               var z = x + y; </p>
+
+        <p><b>Debugging (alerts, console, writing to HTML element)
+        </b></p>
+        <p>Searching for errors in programming code is called code debugging.</p>
+
+        <p> -The console.log() Method to display JavaScript values in the debugger window<br>
+           ex: a = 5;<br>
+           b = 6; c = a + b;<br>
+           console.log(c);
+
+        <p> -Writing to HTML element To change the content of an HTML element<br>
+        document.getElementById("p1").innerHTML = "New text!";
+
+         <p> -Alert<br> 
+         An alert box is often used if you want to make sure information comes through to the user.<br>
+         alert("Hello World!!");</p>
+
+         <p><b>Different data types</b></p>
+         <p> JavaScript variables can hold many data types: numbers, strings, arrays, objects.<br>
+         ex:    var length =  16  // Number<br>
+               var lastName = "Johnson" // String<br>
+               var cars = ["Saab", "Volvo", "BMW"];    // Array <br>
+              var x = {firstName:"John", lastName:"Doe"};  // object</p>
+
+           <p><b>Arrays</b></p>
+          <p> JavaScript arrays are used to store multiple values in a single variable.<br>
+          ex:       var cars = ["Saab", "Volvo", "BMW"];<br>document.getElementById("demo").innerHTML = cars;</p>
+
+          <p><b>Objects</b></p>
+         <p>JavaScript objects are containers for named values (called properties) and methods.<br>
+          ex:   var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</p>
+
+          <p><b>Testing</b></p>
+         <p> any test returns a boolean true or false<br>
+          To test if two strings are equal:<br>
+          ex:    "stringone" === "string two"; >false <br>
+               (10-5) == 5; (10-5) == "5";<br>
+                "stringone" !== "string two"; >true<br>
+                5 > 10; > false</p>
+
+               <p><b>Logic</b></p>
+           <p> -The if statement allows us to run code only if a certain test evaluates to true.<br>
+            ex:    if(5>10){   console.log("You'll never see this in the console because 5 is not greater than 10"); } <br>
+            if(5>10){   console.log("You'll never see this because 5 is not greater than 10"); } else{   console.log("You will see this though"); }  </p>
+
+
+            <p><b>Functions</b></p>
+            <p>A JavaScript function is a block of code designed to perform a particular task.<br>
+
+              -function myFunction(p1, p2)<br> {return p1 * p2;}<br><br>
+
+              -function myFunction(name) {<br>    return "Hello " + name;} <br>
+              document.getElementById("demo").innerHTML = myFunction("John");<br><br>
+
+              -function cars(color, size){
+              return color + 4 + size;<br>}
+              console.log(cars("red", 7));<br><br>
+
+              -function king(king_name){<br>return alert(king_name); }<br>
+            king("joffery");
+
+    </div>
+
+
+
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
